@@ -8,12 +8,6 @@ TAKES THE GRAPH INFORMATION AS A .IN FILE THAT CAN BE CREATED IN ANY TEXT EDITOR
 
 LAST UPDATE: 24/11/2016
 */
-
-
-
-
-
-
 #include <stdlib.h>
 #include <iostream>
 #include <string>
@@ -21,7 +15,7 @@ LAST UPDATE: 24/11/2016
 #include <fstream>
 #include <cstring>
 using namespace std;
-#include "Graph.h"
+#include "./classes/Graph.h"
 #include <vector>
 #include <random>
 #include <cmath>
@@ -50,16 +44,12 @@ double getProbability(int difference,double temperature);
 int main(int argc, char const *argv[]) {
   Graph graph;
   ifstream file;
-  openFile("G1.in", file);
+  openFile("assets/G1.in", file);
   graph.generateFromFile(file);
   graph.print();
   entre_opcao(graph);
-
   return 0;
 }
-
-
-
 
 void metodo_heuristico_annealing(Graph graph, vector<string> list_of_paths){
   vector<int> best_solution;
@@ -104,7 +94,7 @@ void metodo_heuristico_annealing(Graph graph, vector<string> list_of_paths){
 }
 }
 
-void metodo_exato (Graph graph, vector<std::string> list_of_paths){
+void metodo_exato(Graph graph, vector<std::string> list_of_paths){
         int numberOfVertices = graph.numberOfVertices;
         int minimunWeight = 1000000;
         vector<std::string> new_vector;

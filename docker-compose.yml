@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  app:
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    command: ./bin/docker_entrypoint.sh
+    volumes:
+      - .:/app

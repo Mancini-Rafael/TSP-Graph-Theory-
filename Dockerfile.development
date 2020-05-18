@@ -1,0 +1,11 @@
+# Get the base Ubuntu image from Docker Hub
+FROM alpine:latest
+
+WORKDIR /app
+ADD . /app
+
+RUN apk add build-base && \
+    apk add bash
+
+
+ENTRYPOINT ["bin/docker_entrypoint.sh"]

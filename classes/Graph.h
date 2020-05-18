@@ -1,4 +1,4 @@
-#include "Vertex.h"
+#include "./Vertex.h"
 #include <vector>
 
 const int MAXIMUM_VERTICES = 50;

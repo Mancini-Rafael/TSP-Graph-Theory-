@@ -17,7 +17,3 @@ given a graph (travelling salesman problem).
 - Luis Fernando Bevilacqua
 - Rafael L Mancini
 - Victoria PS
-
-# Last Update
-- 07/Jan/2018
-
