@@ -7,6 +7,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.development
-    command: ./bin/docker_entrypoint.sh
+    command: ./bin/docker_entrypoint.sh run
     volumes:
       - .:/app

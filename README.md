@@ -13,6 +13,10 @@ given a graph (travelling salesman problem).
 -- Simmulated Annealing
 - The graph information comes as a .in file that can be created by any text editor
 
+# How To Use
+- Run ```docker-compose up```
+- Run ```./main```
+
 # Authors
 - Luis Fernando Bevilacqua
 - Rafael L Mancini
